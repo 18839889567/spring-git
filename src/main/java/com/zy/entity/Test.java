@@ -17,6 +17,7 @@ import java.util.Date;
 public class Test implements Serializable {
     @Id
     private Long tid;
+
     @Column(name = "tname")
     private String name;
     private String email;
