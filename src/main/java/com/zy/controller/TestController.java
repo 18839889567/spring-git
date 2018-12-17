@@ -16,6 +16,7 @@ public class TestController {
 
     @RequestMapping("queryAll")
     public List<Test> queryAll() {
+        System.out.println("3333333333");
         return testService.queryAll();
     }
 }
