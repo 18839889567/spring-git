@@ -7,16 +7,18 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "t_test")
-public class Test {
+public class Test implements Serializable {
     @Id
     private Long tid;
     @Column(name = "tname")
     private String name;
     private String email;
-    private Data birthday;
+    private Date birthday;
 }
